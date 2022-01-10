@@ -11,7 +11,23 @@ Simply add `\usepackage{sillypage}` to your document. Then:
   style defined by this package.
 - Use the macro `\silly` on a LaTeX counter to typeset the corresponding
   image for the value of that counter.
-  
+
+## A sample document
+
+Here we go:
+
+```tex
+\documentclass{article}
+
+\usepackage{sillypage}
+\usepackage{blindtext}
+
+\begin{document}
+\pagenumbering{silly}
+\Blinddocument
+\end{document}
+```
+
 ## Isn't this package too silly?
 
 Yes.
