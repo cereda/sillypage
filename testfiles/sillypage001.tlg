@@ -1,0 +1,732 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+<sillywalk-map.png, id=1, 578.16pt x 66.2475pt>
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.5538pt x 22.76228pt.
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+0.0)x345.0, glue set 324.99998fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 a
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.5538
+.....\hbox(22.7624+0.0)x16.5538
+......\hbox(22.7624+0.0)x16.5538
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17793fil
+.........\hbox(66.24733+0.0)x48.17793
+..........\pdfrefxform(66.24733+0.0)x48.17793
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.5538
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17793
+.\pdfrefximage(66.2475+0.0)x578.16
+ <./sillywalk-map.png>
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 324.44443fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 b
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -48.18004
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [3]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+0.0)x345.0, glue set 325.55556fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 c
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -96.36009
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [4]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 324.44443fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 d
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -144.54016
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [5]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+0.0)x345.0, glue set 325.55556fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 e
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -192.72021
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [6]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 326.94443fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 f
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.5538
+......\hbox(22.7624+0.0)x16.5538
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17793fil
+.........\hbox(66.24733+0.0)x48.17793
+..........\pdfrefxform(66.24733+0.0)x48.17793
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.5538
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17793
+.\glue -240.90028
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [7]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+1.94444)x345.0, glue set 324.99998fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 g
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -1.94444
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.5538
+......\hbox(22.7624+0.0)x16.5538
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17793fil
+.........\hbox(66.24733+0.0)x48.17793
+..........\pdfrefxform(66.24733+0.0)x48.17793
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.5538
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17793
+.\glue -289.08034
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [8]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 324.44443fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 h
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -337.26039
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [9]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.32141
+...\hbox(6.67859+0.0)x345.0, glue set 327.22221fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 i
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -385.44044
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [10]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.32141
+...\hbox(6.67859+1.94444)x345.0, glue set 326.94443fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 j
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -1.94444
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -433.62051
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [11]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 324.7222fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 k
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.55382
+......\hbox(22.7624+0.0)x16.55382
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17795fil
+.........\hbox(66.24733+0.0)x48.17795
+..........\pdfrefxform(66.24733+0.0)x48.17795
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.55382
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17795
+.\glue -481.80057
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.55382pt x 22.76228pt.
+Completed box being shipped out [12]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.05556
+...\hbox(6.94444+0.0)x345.0, glue set 327.22221fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 l
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.55382
+.....\hbox(22.7624+0.0)x16.5538
+......\hbox(22.7624+0.0)x16.5538
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17793fil
+.........\hbox(66.24733+0.0)x48.17793
+..........\pdfrefxform(66.24733+0.0)x48.17793
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.5538
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17793
+.\glue -529.98064
+.\pdfrefximage(66.2475+0.0)x578.16
+File: sillywalk-map.png Graphic file (type png)
+<use sillywalk-map.png>
+Package pdftex.def Info: sillywalk-map.png  used on input line ....
+(pdftex.def)             Requested size: 16.5538pt x 22.76228pt.
+Completed box being shipped out [13]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+0.0)x345.0, glue set 321.66664fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 m
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 7.23772
+..\hbox(22.76228+0.0)x345.0
+...\hbox(22.76228+0.0)x345.0, glue set 164.2231fil
+....\glue 0.0 plus 1.0fil
+....\hbox(22.76228+0.0)x16.5538
+.....\hbox(22.7624+0.0)x16.5538
+......\hbox(22.7624+0.0)x16.5538
+.......\hbox(22.7624+0.0)x0.0
+........\pdfsave
+........\pdfsetmatrix{.3436 0 0 .3436}
+........\hbox(66.24733+0.0)x0.0, glue set - 48.17793fil
+.........\hbox(66.24733+0.0)x48.17793
+..........\pdfrefxform(66.24733+0.0)x48.17793
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\pdfrestore
+.......\kern 16.5538
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
+Completed box being shipped out
+\hbox(66.24733+0.0)x48.17793
+.\pdfrefximage(66.2475+0.0)x578.16

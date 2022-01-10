@@ -1,0 +1,21 @@
+\input regression-test
+\documentclass{article}
+\usepackage{sillypage}
+\begin{document}
+\START
+\loggingoutput
+\pagenumbering{silly}
+a\clearpage
+b\clearpage
+c\clearpage
+d\clearpage
+e\clearpage
+f\clearpage
+g\clearpage
+h\clearpage
+i\clearpage
+j\clearpage
+k\clearpage
+l\clearpage
+m\clearpage
+\END
