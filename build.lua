@@ -4,7 +4,7 @@ module = "sillypage"
 
 sourcefiles   = { "*.dtx", "*.ins", "sillywalk-map.png" }
 
-installfiles  = { "*.sty" }
+installfiles  = { "*.sty", "sillywalk-map.png" }
 
 typesetfiles  = { "*.dtx", "*.tex" }
 
