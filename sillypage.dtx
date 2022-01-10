@@ -77,6 +77,13 @@
 %   corresponding image for the value of that counter.
 % \end{function}
 %
+% \begin{function}{\sillystep}
+%   \begin{syntax}
+%     \cs{sillystep} \Arg{integer}
+%   \end{syntax}
+%   Prints the step number \meta{integer} from the sequence of steps.
+% \end{function}
+%
 % \section{A sample document}
 %
 % A sample document is as follows:
@@ -95,8 +102,13 @@
 %
 % This is the complete silly walk routine:
 %
-% {\centering\silly{1}\silly{2}\silly{3}\silly{4}\silly{5}\silly{6}
-% \silly{7}\silly{8}\silly{9}\silly{10}\silly{11}\silly{12}\par}
+% \makeatletter
+% {\centering
+%  \def\do#1{\ifnum#1>\silly@steps\else
+%    \sillystep{#1}
+%    \expandafter\do\expandafter{%^^A
+%      \number\numexpr#1+1\relax}\fi}\do{1}\par}
+% \makeatother
 %
 % We also recommend Pilates.
 %
@@ -119,13 +131,14 @@
 %    \end{macrocode}
 %
 % \subsection{Loading}
-% \begin{macro}{\silly}
+% \begin{macro}{\silly,\sillystep}
 % \begin{macro}[int]{\@silly}
 % \begin{macro}{
 %      \silly@steps,\silly@width,
 %      \silly@picture,\silly@height}
 %    \begin{macrocode}
 \newcommand*\silly[1]{\expandafter\@silly\csname c@#1\endcsname}
+\newcommand*\sillystep[1]{\@silly{#1}}
 \newcommand*\@silly[1]{\expandafter\@silly@walk
   \expandafter{\number\numexpr#1\relax}}
 \newcommand*\silly@steps{12}%
@@ -161,7 +174,5 @@
 %    \end{macrocode}
 %
 % \end{implementation}
-%
-% \PrintIndex
 %
 \endinput
