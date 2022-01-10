@@ -11,6 +11,8 @@ Simply add `\usepackage{sillypage}` to your document. Then:
   style defined by this package.
 - Use the macro `\silly` on a LaTeX counter to typeset the corresponding
   image for the value of that counter.
+- Use the macro `\sillystep` to print the step number `n` from the
+  sequence of steps.
 
 ## A sample document
 
