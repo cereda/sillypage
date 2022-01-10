@@ -1,0 +1,144 @@
+% \iffalse meta-comment
+% Copyright (C) 2022
+% by Phelype Oleinik <phelype.oleinik@latex-project.org>
+% and Paulo Cereda <cereda.paulo@gmail.com>
+% 
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License, either version 1.3c of this license
+% or (at your option) any later version. The latest version of this
+% license is in
+% 
+%     http://www.latex-project.org/lppl.txt
+% 
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+% 
+% This work is "maintained" (as per the LPPL maintenance status)
+% by Phelype Oleinik and Paulo Cereda.
+% 
+%<*package>
+\def\sillypageDate{2022-01-10}
+\def\sillypageVersion{1.0}
+%</package>
+%<*driver>
+\documentclass[a4paper,full]{l3doc}
+\usepackage{sillypage}
+\begin{document}
+  \DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \GetFileInfo{\jobname.sty}
+%
+% \title{^^A
+%   The \pkg{sillypage} package^^A
+%   \thanks{This file has version number \sillypageVersion,
+%           last revised \sillypageDate.}
+% }
+%
+% \author{^^A
+%  Phelype H. Oleinik\thanks
+%    {^^A
+%      E-mail:
+%        \href{mailto:phelype.oleinik@latex-project.org}
+%          {phelype.oleinik\meta{at}latex-project.org}^^A
+%    }\\
+%  Paulo R. M. Cereda\thanks
+%    {^^A
+%      E-mail:
+%        \href{mailto:cereda.paulo@gmail.com}
+%          {cereda.paulo\meta{at}gmail.com}^^A
+%    }^^A
+% }
+%
+% \date{Released \sillypageDate}
+% \pagenumbering{silly}
+%
+% \maketitle
+%
+% \begin{documentation}
+%
+% \section{Introduction}
+%
+% \begin{function}{\pagenumbering{silly}}
+%   \begin{syntax}
+%     \cs{pagenumbering}\{silly\}
+%   \end{syntax}
+%   Write \cs{pagenumbering}|{silly}| in you document to use the page
+%   numbering style defined by this package.
+% \end{function}
+%
+% \begin{function}{\silly}
+%   \begin{syntax}
+%     \cs{silly} \Arg{counter}
+%   \end{syntax}
+%   Use the macro \cs{silly} on a \LaTeX{} \meta{counter} to typeset the
+%   corresponding image for the value of that counter.
+% \end{function}
+%
+% \end{documentation}
+%
+% \begin{implementation}
+%
+% \section{\pkg{sillypage} Implementation}
+%
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+%
+% \subsection{Package requirements}
+%
+%    \begin{macrocode}
+\ProvidesPackage{sillypage}[\sillypageDate\space\sillypageVersion\space
+  The silly walk as page numbering style]
+\RequirePackage{graphicx}
+%    \end{macrocode}
+%
+% \subsection{Loading}
+% \begin{macro}{\silly}
+% \begin{macro}[int]{\@silly}
+% \begin{macro}{
+%      \silly@steps,\silly@width,
+%      \silly@picture,\silly@height}
+%    \begin{macrocode}
+\newcommand*\silly[1]{\expandafter\@silly\csname c@#1\endcsname}
+\newcommand*\@silly[1]{\expandafter\@silly@walk
+  \expandafter{\number\numexpr#1\relax}}
+\newcommand*\silly@steps{12}%
+\newcommand*\silly@width{48px}%
+\newcommand*\silly@height{.8cm}%
+\newcommand*\silly@picture{sillywalk-map.png}%
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}[int]{\@silly@walk,\@silly@walk@}
+%    \begin{macrocode}
+\def\@silly@walk#1{%
+  \@ifundefined{texorpdfstring}{\@firstoftwo}{\texorpdfstring}%
+    {\@silly@walk@{#1}}% TeX
+    {#1}}% pdf string
+\def\@silly@walk@#1{%
+  \ifnum#1>\silly@steps\space
+    \expandafter\@silly@walk@\expandafter
+      {\number\numexpr#1-\silly@steps\expandafter}%
+  \else
+    \expandafter\includegraphics\expanded{[height=\silly@height,trim={%
+      \the\dimexpr\silly@width*(#1-1)\relax\space 0
+      \the\dimexpr\silly@width*(\silly@steps-#1)\relax\space 0},clip]}%
+        {\silly@picture}%
+  \fi}
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}
+%
+% \end{implementation}
+%
+% \PrintIndex
+%
+\endinput
