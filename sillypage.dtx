@@ -17,12 +17,16 @@
 % by Phelype Oleinik and Paulo Cereda.
 % 
 %<*package>
-\def\sillypageDate{2022-01-10}
-\def\sillypageVersion{1.1}
+\def\sillypageDate{2022-01-11}
+\def\sillypageVersion{1.2}
 %</package>
 %<*driver>
 \documentclass[a4paper,full]{l3doc}
+\usepackage[T1]{fontenc}
+\usepackage{tgbonum}
+\usepackage[scaled=.85]{beramono}
 \usepackage{sillypage}
+\usepackage{hyperref}
 \begin{document}
   \DocInput{\jobname.dtx}
 \end{document}
@@ -61,12 +65,48 @@
 %
 % \section{Introduction}
 %
+% This package is inspired by \emph{The Ministry of Silly Walks}, a famous
+% sketch from Monty Python. According to the corresponding
+% \href{https://bit.ly/33jKsl1}{Wikipedia article}:
+%
+% \begin{quotation}
+% The sketch as originally depicted in the series begins with John Cleese
+% playing Mr.\ Teabag, a civil servant who, after purchasing The Times
+% from the newsagent in the previous sketch, walks through the streets
+% of London (at the crossing of Thorpebank Road and Dunraven Road) in a
+% very peculiar manner. He eventually arrives at his place of business:
+% The Ministry of Silly Walks, on the northern end of Whitehall. In the
+% hallway, he passes other employees all exhibiting their own silly walks
+% before arriving at his office. Once there, he finds Mr Putey (Michael
+% Palin) waiting for him and apologizes for the delay, explaining that
+% his walk has become particularly silly of late and it takes longer for
+% him to reach his destination.
+% \end{quotation}
+%
+% So we decided to bring this masterpiece of British pop culture to
+% the \TeX{} world through a silly page numbering style. Make sure to
+% use this package in your thesis, it will be a success.
+%
+% \section{Usage}
+%
+% Using a silly package like this is quite straighforward! For starters,
+% make sure to include it in your document preamble through
+%
+% \begin{verbatim}
+% \usepackage{sillypage}
+% \end{verbatim}
+%
+% \noindent and that is it! The available interface is as follows:
+%
 % \begin{function}{\pagenumbering{silly}}
 %   \begin{syntax}
 %     \cs{pagenumbering}\{silly\}
 %   \end{syntax}
 %   Write \cs{pagenumbering}|{silly}| in you document to use the page
-%   numbering style defined by this package.
+%   numbering style defined by this package. According to Wikipedia,
+%   the typical silly walk gait consists of twelve specific steps to
+%   be performed, so page numbering will cycle through these steps,
+%   in an kineograph fashion.
 % \end{function}
 %
 % \begin{function}{\silly}
@@ -74,7 +114,9 @@
 %     \cs{silly} \Arg{counter}
 %   \end{syntax}
 %   Use the macro \cs{silly} on a \LaTeX{} \meta{counter} to typeset the
-%   corresponding image for the value of that counter.
+%   corresponding image for the value of that counter. As noted above,
+%   the value will be mapped to an image in the silly walk cycle. Also,
+%   observe that this macro is applied to counters and not to integers.
 % \end{function}
 %
 % \begin{function}{\sillystep}
@@ -82,11 +124,19 @@
 %     \cs{sillystep} \Arg{integer}
 %   \end{syntax}
 %   Prints the step number \meta{integer} from the sequence of steps.
+%   This macro works exactly like \cs{silly}, but on integers instead
+%   of counters. The integer value will be mapped to an image in the
+%   silly walk cycle.
 % \end{function}
+%
+% \bigskip
+%
+% What a silly yet marvellous interface!
 %
 % \section{A sample document}
 %
-% A sample document is as follows:
+% As a means to demonstrate how straightforward (and of course silly) our package
+% is, here is a minimal working example:
 %
 % \begin{verbatim}
 % \documentclass{article}
@@ -100,7 +150,19 @@
 % \end{document}
 % \end{verbatim}
 %
-% This is the complete silly walk routine:
+% After compiling it, take a look at the page numbering: you will be greeted with
+% the silly walk routine! To impress your supervisor, use our package in your thesis,
+% print it and ask them to view those pages in quick succession, so the images appear
+% to animate by simulating motion! It is known to work with thesis committees as well.
+%
+% \section{The silly walk routine}
+%
+% This is the complete silly walk routine provided by Jazeen Hollings in the
+% \href{https://bit.ly/3fc9x46}{corresponding Wikipedia article}. The images
+% used in this package are from that particular instruction set, licensed
+% under CC BY-SA 3.0. We gathered them together for optimization purposes.
+%
+% \bigskip
 %
 % \makeatletter
 % {\centering
@@ -110,13 +172,19 @@
 %      \number\numexpr#1+1\relax}\fi}\do{1}\par}
 % \makeatother
 %
+% \bigskip
+%
 % We also recommend Pilates.
 %
 % \end{documentation}
 %
 % \begin{implementation}
 %
-% \section{\pkg{sillypage} Implementation}
+% \section{Implementation details}
+%
+% The implementation is quite straightforward. Feel free to contact us for
+% suggestions and criticism, code improvements and of course other silly
+% walk variants.
 %
 %    \begin{macrocode}
 %<*package>
