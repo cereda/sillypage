@@ -12,6 +12,11 @@
 *.cb2
 .*.lb
 
+# specific for us
+build/
+*.pdf
+*.zip
+
 ## Intermediate documents:
 *.dvi
 *.xdv
