@@ -8,6 +8,8 @@ installfiles  = { "*.sty", "sillywalk-map.png" }
 
 typesetfiles  = { "*.dtx", "*.tex" }
 
+textfiles = { "README.md" }
+
 checkruns     = 1
 typesetruns   = 3
 
