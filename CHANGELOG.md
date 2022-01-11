@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.2] - 2022-01-11
+
 ### Added
 
 - This CHANGELOG was included to reflect notable changes in this project.
@@ -29,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First public release.
 
-[Unreleased]: https://github.com/cereda/sillypage/compare/v1.1...HEAD
+[Unreleased]: https://github.com/cereda/sillypage/compare/v1.2...HEAD
+[1.1]: https://github.com/cereda/sillypage/compare/v1.1...v1.2
 [1.1]: https://github.com/cereda/sillypage/compare/v1.0...v1.1
 [1.0]: https://github.com/cereda/sillypage/releases/tag/v1.0
