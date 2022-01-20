@@ -238,8 +238,7 @@
     \expandafter\@silly@walk@\expandafter
       {\number\numexpr#1-\silly@steps\expandafter}%
   \else
-    \expandafter\includegraphics\expanded{[height=\silly@height,page=#1]}%
-        {\silly@picture}%
+    \includegraphics[height=\silly@height,page=#1]{\silly@picture}%
   \fi}
 %    \end{macrocode}
 % \end{macro}
