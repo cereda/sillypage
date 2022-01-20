@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Sources for the silly walk routine image were included in the repository.
+
+### Changed
+
+- The silly walk routine image was replaced from raster to vector (see #3).
+
 ## [1.2] - 2022-01-11
 
 ### Added

@@ -41,10 +41,11 @@ Yes.
 
 ## Authors
 
-Blame these two blokes:
+Blame these three individuals:
 
 - Phelype Oleinik
 - Paulo Cereda
+- samcarter
 
 ## License
 
@@ -52,3 +53,6 @@ The `sillypage` package may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3c of
 this license or (at your option) any later version.
 
+Images used in this package are created from scratch and released under
+the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+license.
