@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.3] - 2022-01-20
+
 ### Added
 
 - Sources for the silly walk routine image were included in the repository.
@@ -39,7 +41,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First public release.
 
-[Unreleased]: https://github.com/cereda/sillypage/compare/v1.2...HEAD
+[Unreleased]: https://github.com/cereda/sillypage/compare/v1.3...HEAD
+[1.3]: https://github.com/cereda/sillypage/compare/v1.2...v1.3
 [1.2]: https://github.com/cereda/sillypage/compare/v1.1...v1.2
 [1.1]: https://github.com/cereda/sillypage/compare/v1.0...v1.1
 [1.0]: https://github.com/cereda/sillypage/releases/tag/v1.0
