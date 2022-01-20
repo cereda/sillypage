@@ -211,8 +211,8 @@
 % \begin{macro}{\silly,\sillystep}
 % \begin{macro}[int]{\@silly}
 % \begin{macro}{
-%      \silly@steps,\silly@padtop,
-%      \silly@padbottom,\silly@picture,
+%      \silly@steps,
+%      \silly@picture,
 %      \silly@height}
 %    \begin{macrocode}
 \newcommand*\silly[1]{\expandafter\@silly\csname c@#1\endcsname}
@@ -220,8 +220,6 @@
 \newcommand*\@silly[1]{\expandafter\@silly@walk
   \expandafter{\number\numexpr#1\relax}}
 \newcommand*\silly@steps{12}%
-\newcommand*\silly@padtop{7}%
-\newcommand*\silly@padbottom{7}%
 \newcommand*\silly@height{.8cm}%
 \newcommand*\silly@picture{sillywalk-map.pdf}%
 %    \end{macrocode}
@@ -240,9 +238,7 @@
     \expandafter\@silly@walk@\expandafter
       {\number\numexpr#1-\silly@steps\expandafter}%
   \else
-    \expandafter\includegraphics\expanded{[height=\silly@height,%
-         page=#1,trim={0 \silly@padbottom\space 0
-         \silly@padtop},clip]}%
+    \expandafter\includegraphics\expanded{[height=\silly@height,page=#1]}%
         {\silly@picture}%
   \fi}
 %    \end{macrocode}
