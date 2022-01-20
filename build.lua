@@ -2,9 +2,9 @@
 
 module = "sillypage"
 
-sourcefiles   = { "*.dtx", "*.ins", "sillywalk-map.png" }
+sourcefiles   = { "*.dtx", "*.ins", "sillywalk-map.pdf" }
 
-installfiles  = { "*.sty", "sillywalk-map.png" }
+installfiles  = { "*.sty", "sillywalk-map.pdf" }
 
 typesetfiles  = { "*.dtx", "*.tex" }
 
