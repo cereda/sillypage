@@ -1,7 +1,8 @@
 % \iffalse meta-comment
 % Copyright (C) 2022
 % by Phelype Oleinik <phelype.oleinik@latex-project.org>
-% and Paulo Cereda <cereda.paulo@gmail.com>
+% Paulo Cereda <cereda.paulo@gmail.com>
+% and samcarter <sam.carter8@aol.com>
 % 
 % This work may be distributed and/or modified under the conditions of
 % the LaTeX Project Public License, either version 1.3c of this license
@@ -17,8 +18,8 @@
 % by Phelype Oleinik and Paulo Cereda.
 % 
 %<*package>
-\def\sillypageDate{2022-01-11}
-\def\sillypageVersion{1.2}
+\def\sillypageDate{2022-01-22}
+\def\sillypageVersion{1.3}
 %</package>
 %<*driver>
 \documentclass[a4paper,full]{l3doc}
@@ -42,17 +43,23 @@
 % }
 %
 % \author{^^A
-%  Phelype H. Oleinik\thanks
+%  Phelype \emph{lemon curry} Oleinik\thanks
 %    {^^A
 %      E-mail:
 %        \href{mailto:phelype.oleinik@latex-project.org}
 %          {phelype.oleinik\meta{at}latex-project.org}^^A
 %    }\\
-%  Paulo R. M. Cereda\thanks
+%  Paulo \emph{dictates a letter} Cereda\thanks
 %    {^^A
 %      E-mail:
 %        \href{mailto:cereda.paulo@gmail.com}
 %          {cereda.paulo\meta{at}gmail.com}^^A
+%    }\\
+%  samcarter \emph{cheesy comestibles}\thanks
+%    {^^A
+%     E-mail:
+%        \href{mailto:sam.carter8@aol.com}
+%          {sam.carter8\meta{at}aol.com}^^A
 %    }^^A
 % }
 %
@@ -71,13 +78,13 @@
 %
 % \begin{quotation}
 % The sketch as originally depicted in the series begins with John Cleese
-% playing Mr.\ Teabag, a civil servant who, after purchasing The Times
+% playing Mr.~Teabag, a civil servant who, after purchasing The Times
 % from the newsagent in the previous sketch, walks through the streets
 % of London (at the crossing of Thorpebank Road and Dunraven Road) in a
 % very peculiar manner. He eventually arrives at his place of business:
 % The Ministry of Silly Walks, on the northern end of Whitehall. In the
 % hallway, he passes other employees all exhibiting their own silly walks
-% before arriving at his office. Once there, he finds Mr Putey (Michael
+% before arriving at his office. Once there, he finds Mr.~Putey (Michael
 % Palin) waiting for him and apologizes for the delay, explaining that
 % his walk has become particularly silly of late and it takes longer for
 % him to reach his destination.
@@ -157,10 +164,12 @@
 %
 % \section{The silly walk routine}
 %
-% This is the complete silly walk routine provided by Jazeen Hollings in the
-% \href{https://bit.ly/3fc9x46}{corresponding Wikipedia article}. The images
-% used in this package are from that particular instruction set, licensed
-% under CC BY-SA 3.0. We gathered them together for optimization purposes.
+% This is the complete silly walk routine as described by Jazeen Hollings in the
+% \href{https://bit.ly/3fc9x46}{corresponding Wikipedia article}. Please note that the
+% images used in this package are created from scratch by samcarter and released under
+% the \href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0} licence.
+% Image sources (vector format) are available in the
+% \href{https://github.com/cereda/sillypage}{package repository}
 %
 % \bigskip
 %
@@ -202,17 +211,19 @@
 % \begin{macro}{\silly,\sillystep}
 % \begin{macro}[int]{\@silly}
 % \begin{macro}{
-%      \silly@steps,\silly@width,
-%      \silly@picture,\silly@height}
+%      \silly@steps,\silly@padtop,
+%      \silly@padbottom,\silly@picture,
+%      \silly@height}
 %    \begin{macrocode}
 \newcommand*\silly[1]{\expandafter\@silly\csname c@#1\endcsname}
 \newcommand*\sillystep[1]{\@silly{#1}}
 \newcommand*\@silly[1]{\expandafter\@silly@walk
   \expandafter{\number\numexpr#1\relax}}
 \newcommand*\silly@steps{12}%
-\newcommand*\silly@width{48px}%
+\newcommand*\silly@padtop{7}%
+\newcommand*\silly@padbottom{7}%
 \newcommand*\silly@height{.8cm}%
-\newcommand*\silly@picture{sillywalk-map.png}%
+\newcommand*\silly@picture{sillywalk-map.pdf}%
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
@@ -229,9 +240,9 @@
     \expandafter\@silly@walk@\expandafter
       {\number\numexpr#1-\silly@steps\expandafter}%
   \else
-    \expandafter\includegraphics\expanded{[height=\silly@height,trim={%
-      \the\dimexpr\silly@width*(#1-1)\relax\space 0
-      \the\dimexpr\silly@width*(\silly@steps-#1)\relax\space 0},clip]}%
+    \expandafter\includegraphics\expanded{[height=\silly@height,%
+         page=#1,trim={0 \silly@padbottom\space 0
+         \silly@padtop},clip]}%
         {\silly@picture}%
   \fi}
 %    \end{macrocode}
