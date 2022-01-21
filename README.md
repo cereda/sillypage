@@ -32,7 +32,7 @@ Here we go:
 
 ## Installation notes
 
-Just note that `sillywalk-map.png` should go under the `tex/` subtree
+Just note that `sillywalk-map.pdf` should go under the `tex/` subtree
 (as it is required by `sillypage.sty`) instead of the `doc/` counterpart.
 
 ## Isn't this package too silly?
