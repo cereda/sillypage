@@ -211,7 +211,7 @@
 %
 % \subsection{Picture-specific macros}
 %
-% \begin{macro}{
+% \begin{macro}[int]{
 %      \silly@steps,
 %      \silly@picture,
 %      \silly@height}
@@ -231,7 +231,7 @@
 \NewDocumentCommand \silly { m } { \exp_args:Nv \@@_step:n { c@#1 } }
 \NewDocumentCommand \sillystep { m } { \@@_step:n {#1} }
 \newcommand*\@silly { \@@_step:n }
-\cs_new_protected:Npn \@@_step:n #1
+\cs_new:Npn \@@_step:n #1
   {
     \@@_step_aux:eN
       { \int_eval:n { \int_mod:nn { #1-1 } { \silly@steps } +1 } }
@@ -250,12 +250,12 @@
 %    \begin{macrocode}
 \NewDocumentCommand \sillynumeral { m } { \@@_numeral:n {#1} }
 \newcommand*\@sillynumeral { \@@_step:n }
-\cs_new_protected:Npn \@@_numeral:n #1
+\cs_new:Npn \@@_numeral:n #1
   {
     \exp_args:Ne \str_map_function:nN
       { \int_to_base:nn {#1} { 12 } } \@@_numeral_aux:n
   }
-\cs_new_protected:Npn \@@_numeral_aux:n #1
+\cs_new:Npn \@@_numeral_aux:n #1
   { \@@_step_aux:eN { "\char_uppercase:N #1+1 } \c_true_bool }
 %    \end{macrocode}
 % \end{macro}
@@ -264,46 +264,60 @@
 %
 % \subsection{Internals}
 %
-% \begin{macro}{\@@_step_aux:nN,\@@_step_aux:eN,\@@_step_picture:nN}
+% \begin{macro}{\@@_step_aux:nN,\@@_step_aux:eN,\@@_trim_step:nN}
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_step_aux:nN #1 #2
+\cs_new:Npn \@@_step_aux:nN #1 #2
   {
     \cs_if_exist_use:cF { texorpdfstring } { \use_i:nn }
-      { \@@_step_picture:nN {#1} #2 }
+      { \@@_trim_step:nN {#1} #2 }
       {#1}
   }
 \cs_generate_variant:Nn \@@_step_aux:nN { e }
-\cs_new_protected:Npn \@@_step_picture:nN #1 #2
+\cs_new:Npn \@@_trim_step:nN #1 #2
   {
-    \use:e
+%<@@=>
+    \exp_args:Nee \@@silly@place@picture@@nn
       {
-        \exp_not:N \includegraphics
-          [
-            \bool_if:NT #2
+        \bool_if:NT #2
+          {
+            trim = \int_case:nn {#1}
               {
-                trim = \int_case:nn {#1}
-                  {
-                    {  1 } { 57 ~ 0 ~ 42 ~ 0 }
-                    {  2 } { 59 ~ 0 ~ 29 ~ 0 }
-                    {  3 } { 53 ~ 0 ~ 21 ~ 0 }
-                    {  4 } { 62 ~ 0 ~ 11 ~ 0 }
-                    {  5 } { 50 ~ 0 ~  8 ~ 0 }
-                    {  6 } { 33 ~ 0 ~ 27 ~ 0 }
-                    {  7 } { 45 ~ 0 ~ 13 ~ 0 }
-                    {  8 } { 56 ~ 0 ~ 27 ~ 0 }
-                    {  9 } { 38 ~ 0 ~ 12 ~ 0 }
-                    { 10 } {  7 ~ 0 ~ 43 ~ 0 }
-                    { 11 } { 33 ~ 0 ~ 33 ~ 0 }
-                    { 12 } { 57 ~ 0 ~  7 ~ 0 }
-                  }
-                , clip ,
+                {  1 } { 57 ~ 0 ~ 42 ~ 0 }
+                {  2 } { 59 ~ 0 ~ 29 ~ 0 }
+                {  3 } { 53 ~ 0 ~ 21 ~ 0 }
+                {  4 } { 62 ~ 0 ~ 11 ~ 0 }
+                {  5 } { 50 ~ 0 ~  8 ~ 0 }
+                {  6 } { 33 ~ 0 ~ 27 ~ 0 }
+                {  7 } { 45 ~ 0 ~ 13 ~ 0 }
+                {  8 } { 56 ~ 0 ~ 27 ~ 0 }
+                {  9 } { 38 ~ 0 ~ 12 ~ 0 }
+                { 10 } {  7 ~ 0 ~ 43 ~ 0 }
+                { 11 } { 33 ~ 0 ~ 33 ~ 0 }
+                { 12 } { 57 ~ 0 ~  7 ~ 0 }
               }
-            height = \silly@height,
-            page = \int_eval:n {#1},
-          ]
-          { \silly@picture }
+            , clip
+          }
       }
+      { \int_eval:n {#1} }
   }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}[int]{\@@silly@place@picture@@nn}
+%    \begin{macrocode}
+\DeclareRobustCommand \@@silly@place@picture@@nn [2]
+  {
+    \includegraphics
+      [ #1, page=#2, height=\silly@height ]
+      { \silly@picture }
+  }
+\AtBeginDocument
+  {
+    \cs_if_exist_use:NF \pdfstringdefDisableCommands { \use_none:n }
+      { \cs_set:Npn \@@silly@place@picture@@nn #1 #2 {#2} }
+  }
+\DeclareHookRule { begindocument }
+  { sillypage } { after } { hyperref }
 %    \end{macrocode}
 % \end{macro}
 %
