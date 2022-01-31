@@ -197,49 +197,113 @@
 %
 %    \begin{macrocode}
 %<*package>
+%<@@=silly>
 %    \end{macrocode}
 %
 % \subsection{Package requirements}
 %
 %    \begin{macrocode}
-\ProvidesPackage{sillypage}[\sillypageDate\space\sillypageVersion\space
-  The silly walk as page numbering style]
+\ProvidesExplPackage
+  {sillypage} {\sillypageDate} {\sillypageVersion}
+  {The silly walk as page numbering style}
 \RequirePackage{graphicx}
 %    \end{macrocode}
 %
-% \subsection{Loading}
-% \begin{macro}{\silly,\sillystep}
-% \begin{macro}[int]{\@silly}
+% \subsection{Picture-specific macros}
+%
 % \begin{macro}{
 %      \silly@steps,
 %      \silly@picture,
 %      \silly@height}
 %    \begin{macrocode}
-\newcommand*\silly[1]{\expandafter\@silly\csname c@#1\endcsname}
-\newcommand*\sillystep[1]{\@silly{#1}}
-\newcommand*\@silly[1]{\expandafter\@silly@walk
-  \expandafter{\number\numexpr#1\relax}}
-\newcommand*\silly@steps{12}%
-\newcommand*\silly@height{.8cm}%
-\newcommand*\silly@picture{sillywalk-map.pdf}%
+\newcommand*\silly@steps{12}
+\newcommand*\silly@height{.8cm}
+\newcommand*\silly@picture{sillywalk-map.pdf}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Single step macros}
+%
+% \begin{macro}{\silly,\sillystep}
+% \begin{macro}[int]{\@silly}
+% \begin{macro}{\@@_step:n}
+%    \begin{macrocode}
+\NewDocumentCommand \silly { m } { \exp_args:Nv \@@_step:n { c@#1 } }
+\NewDocumentCommand \sillystep { m } { \@@_step:n {#1} }
+\newcommand*\@silly { \@@_step:n }
+\cs_new_protected:Npn \@@_step:n #1
+  {
+    \@@_step_aux:eN
+      { \int_eval:n { \int_mod:nn { #1-1 } { \silly@steps } +1 } }
+      \c_false_bool
+  }
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
 % \end{macro}
 %
-% \begin{macro}[int]{\@silly@walk,\@silly@walk@}
+% \subsection{Multi step macros}
+%
+% \begin{macro}{\sillynumeral}
+% \begin{macro}[int]{\@sillynumeral}
+% \begin{macro}{\@@_numeral:n,\@@_numeral_aux:n}
 %    \begin{macrocode}
-\def\@silly@walk#1{%
-  \@ifundefined{texorpdfstring}{\@firstoftwo}{\texorpdfstring}%
-    {\@silly@walk@{#1}}% TeX
-    {#1}}% pdf string
-\def\@silly@walk@#1{%
-  \ifnum#1>\silly@steps\space
-    \expandafter\@silly@walk@\expandafter
-      {\number\numexpr#1-\silly@steps\expandafter}%
-  \else
-    \includegraphics[height=\silly@height,page=#1]{\silly@picture}%
-  \fi}
+\NewDocumentCommand \sillynumeral { m } { \@@_numeral:n {#1} }
+\newcommand*\@sillynumeral { \@@_step:n }
+\cs_new_protected:Npn \@@_numeral:n #1
+  {
+    \exp_args:Ne \str_map_function:nN
+      { \int_to_base:nn {#1} { 12 } } \@@_numeral_aux:n
+  }
+\cs_new_protected:Npn \@@_numeral_aux:n #1
+  { \@@_step_aux:eN { "\char_uppercase:N #1+1 } \c_true_bool }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \subsection{Internals}
+%
+% \begin{macro}{\@@_step_aux:nN,\@@_step_aux:eN,\@@_step_picture:nN}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_step_aux:nN #1 #2
+  {
+    \cs_if_exist_use:cF { texorpdfstring } { \use_i:nn }
+      { \@@_step_picture:nN {#1} #2 }
+      {#1}
+  }
+\cs_generate_variant:Nn \@@_step_aux:nN { e }
+\cs_new_protected:Npn \@@_step_picture:nN #1 #2
+  {
+    \use:e
+      {
+        \exp_not:N \includegraphics
+          [
+            \bool_if:NT #2
+              {
+                trim = \int_case:nn {#1}
+                  {
+                    {  1 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  2 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  3 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  4 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  5 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  6 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  7 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  8 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    {  9 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    { 10 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    { 11 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                    { 12 } { 0pt ~ 0pt ~ 0pt ~ 0pt }
+                  }
+                , clip ,
+              }
+            height = \silly@height,
+            page = \int_eval:n {#1},
+          ]
+          { \silly@picture }
+      }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
