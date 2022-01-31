@@ -249,7 +249,7 @@
 % \begin{macro}{\@@_numeral:n,\@@_numeral_aux:n}
 %    \begin{macrocode}
 \NewDocumentCommand \sillynumeral { m } { \@@_numeral:n {#1} }
-\newcommand*\@sillynumeral { \@@_step:n }
+\newcommand*\@sillynumeral { \@@_numeral:n }
 \cs_new:Npn \@@_numeral:n #1
   {
     \exp_args:Ne \str_map_function:nN
