@@ -2,7 +2,8 @@
 % Copyright (C) 2022
 % by Phelype Oleinik <phelype.oleinik@latex-project.org>
 % Paulo Cereda <cereda.paulo@gmail.com>
-% and samcarter <sam.carter8@aol.com>
+% samcarter <sam.carter8@aol.com>
+% and Ulrike Fischer <fischer@troubleshooting-tex.de>
 % 
 % This work may be distributed and/or modified under the conditions of
 % the LaTeX Project Public License, either version 1.3c of this license
@@ -15,7 +16,7 @@
 % version 2005/12/01 or later.
 % 
 % This work is "maintained" (as per the LPPL maintenance status)
-% by Phelype Oleinik and Paulo Cereda.
+% by Phelype Oleinik, Paulo Cereda, samcarter and Ulrike Fischer.
 % 
 %<*package>
 \def\sillypageDate{2022-01-20}
@@ -60,6 +61,12 @@
 %     E-mail:
 %        \href{mailto:sam.carter8@aol.com}
 %          {sam.carter8\meta{at}aol.com}^^A
+%    }\\
+%  Ulrike \emph{flying lessons} Fischer\thanks
+%    {^^A
+%     E-mail:
+%        \href{mailto:fischer@troubleshooting-tex.de}
+%          {fischer\meta{at}troubleshooting-tex.de}^^A
 %    }^^A
 % }
 %
@@ -134,6 +141,17 @@
 %   This macro works exactly like \cs{silly}, but on integers instead
 %   of counters. The integer value will be mapped to an image in the
 %   silly walk cycle.
+% \end{function}
+%
+% \begin{function}{\pagenumbering{sillynumeral}}
+%   \begin{syntax}
+%     \cs{pagenumbering}\{sillynumeral\}
+%   \end{syntax}
+%   Write \cs{pagenumbering}|{sillynumeral}| in you document to use a
+%   silly numeral system, in which each page will be converted to a unique
+%   composition of silly steps. Note that this macro differs from its
+%   \cs{silly} counterpart, as the former is a proper base 12 numeral
+%   system whereas the latter simply walks through a 12-cycle silly routine.
 % \end{function}
 %
 % \bigskip
