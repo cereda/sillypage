@@ -13,6 +13,10 @@ Simply add `\usepackage{sillypage}` to your document. Then:
   image for the value of that counter.
 - Use the macro `\sillystep` to print the step number `n` from the
   sequence of steps.
+- Write `\pagenumbering{sillynumeral}` in you document to use a silly
+  numeral system.
+- Use the macro `\sillynumeral` to get the silly numeral system
+  representation from the provided `n` value.
 
 ## A sample document
 
@@ -41,11 +45,12 @@ Yes.
 
 ## Authors
 
-Blame these three individuals:
+Blame these individuals:
 
 - Phelype Oleinik
 - Paulo Cereda
 - samcarter
+- Ulrike Fischer
 
 ## License
 
