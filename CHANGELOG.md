@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.4] - 2022-02-02
+
+### Added
+
+- The package now features a silly numeral system (see #5).
+
+### Changed
+
+- Code was rewritten using the LaTeX3 programming interface.
+
+### Fixed
+
+- Improved code to be `hyperref`-friendly (see #6).
+
 ## [1.3] - 2022-01-20
 
 ### Added
@@ -41,7 +55,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First public release.
 
-[Unreleased]: https://github.com/cereda/sillypage/compare/v1.3...HEAD
+[Unreleased]: https://github.com/cereda/sillypage/compare/v1.4...HEAD
+[1.4]: https://github.com/cereda/sillypage/compare/v1.3...v1.4
 [1.3]: https://github.com/cereda/sillypage/compare/v1.2...v1.3
 [1.2]: https://github.com/cereda/sillypage/compare/v1.1...v1.2
 [1.1]: https://github.com/cereda/sillypage/compare/v1.0...v1.1
