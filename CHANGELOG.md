@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.5] - 2022-08-02
+
+### Fixed
+
+- Clarified image usage, corrected documentation typos.
+
 ## [1.4] - 2022-02-02
 
 ### Added
@@ -55,7 +61,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First public release.
 
-[Unreleased]: https://github.com/cereda/sillypage/compare/v1.4...HEAD
+[Unreleased]: https://github.com/cereda/sillypage/compare/v1.5...HEAD
+[1.4]: https://github.com/cereda/sillypage/compare/v1.4...v1.5
 [1.4]: https://github.com/cereda/sillypage/compare/v1.3...v1.4
 [1.3]: https://github.com/cereda/sillypage/compare/v1.2...v1.3
 [1.2]: https://github.com/cereda/sillypage/compare/v1.1...v1.2
