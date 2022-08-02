@@ -7,13 +7,13 @@ routine as page numbering style.
 
 Simply add `\usepackage{sillypage}` to your document. Then:
 
-- Write `\pagenumbering{silly}` in you document to use the page numbering
+- Write `\pagenumbering{silly}` in your document to use the page numbering
   style defined by this package.
 - Use the macro `\silly` on a LaTeX counter to typeset the corresponding
   image for the value of that counter.
 - Use the macro `\sillystep` to print the step number `n` from the
   sequence of steps.
-- Write `\pagenumbering{sillynumeral}` in you document to use a silly
+- Write `\pagenumbering{sillynumeral}` in your document to use a silly
   numeral system.
 - Use the macro `\sillynumeral` to get the silly numeral system
   representation from the provided `n` value.
@@ -57,7 +57,3 @@ Blame these individuals:
 The `sillypage` package may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3c of
 this license or (at your option) any later version.
-
-Images used in this package are created from scratch and released under
-the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license.
