@@ -10,7 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- Clarified image usage, corrected documentation typos.
+- Added mention to other physical fitness systems (see #2).
+- Added clarification regarding image usage licensing.
+- Documentation and `README` typos were corrected.
 
 ## [1.4] - 2022-02-02
 
