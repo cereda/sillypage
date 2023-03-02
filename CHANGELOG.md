@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.6] - 2023-03-02
+
+### Fixed
+
+- `sillywalk-map.pdf` was properly converted from CMYK
+  to black and white (see #10).
+
 ## [1.5] - 2022-08-02
 
 ### Fixed
