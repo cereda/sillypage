@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.7] - 2024-07-23
+
+### Added
+
+- Tagging support. (see #15)
+
 ## [1.6] - 2023-03-04
 
 ### Fixed
@@ -70,7 +76,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First public release.
 
-[Unreleased]: https://github.com/cereda/sillypage/compare/v1.6...HEAD
+[Unreleased]: https://github.com/cereda/sillypage/compare/v1.7...HEAD
+[1.7]: https://github.com/cereda/sillypage/compare/v1.6...v1.7
 [1.6]: https://github.com/cereda/sillypage/compare/v1.5...v1.6
 [1.5]: https://github.com/cereda/sillypage/compare/v1.4...v1.5
 [1.4]: https://github.com/cereda/sillypage/compare/v1.3...v1.4
