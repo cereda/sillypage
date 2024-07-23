@@ -339,12 +339,12 @@ stream
 EMC
 /Lbl <</MCID 0 >> BDC
 BT
-/F42 14.3462 Tf 133.768 657.235 Td [(1)]TJ
+/F40 14.3462 Tf 133.768 657.235 Td [(1)]TJ
 ET
 EMC
 /section <</MCID 1 >> BDC
 BT
-/F42 14.3462 Tf 157.978 657.235 Td [(test)]TJ
+/F40 14.3462 Tf 157.978 657.235 Td [(test)]TJ
 ET
 EMC
 /text <</MCID 2 >> BDC
@@ -863,7 +863,7 @@ endobj
 45 0 obj
 <<
 /ExtGState 1 0 R 
-/Font << /F42 47 0 R >>
+/Font << /F40 47 0 R >>
 /XObject << /Fm1 40 0 R /Fm2 42 0 R /Im1 31 0 R /Im2 35 0 R /Im5 43 0 R >>
 >>
 endobj
