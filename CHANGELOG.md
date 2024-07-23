@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+ - tagging support
+
 ## [1.6] - 2023-03-04
 
 ### Fixed

@@ -10,7 +10,7 @@ typesetfiles  = { "*.dtx", "*.tex" }
 
 textfiles = { "README.md" }
 
-checkruns     = 1
+checkruns     = 3
 typesetruns   = 3
 
 checkengines  = { "pdftex" }

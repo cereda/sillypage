@@ -19,8 +19,8 @@
 % by Phelype Oleinik, Paulo Cereda, samcarter and Ulrike Fischer.
 % 
 %<*package>
-\def\sillypageDate{2023-03-04}
-\def\sillypageVersion{1.6}
+\def\sillypageDate{2024-07-23}
+\def\sillypageVersion{1.7}
 %</package>
 %<*driver>
 \documentclass[a4paper,full]{l3doc}
@@ -261,9 +261,13 @@
 \newcommand*\@silly { \@@_step:n }
 \cs_new:Npn \@@_step:n #1
   {
+    \UseTaggingSocket{@@/begin}{#1}
+    \SuspendTagging{@@}
     \@@_step_aux:eN
       { \int_eval:n { \int_mod:nn { #1-1 } { \silly@steps } +1 } }
       \c_false_bool
+    \ResumeTagging{@@}
+    \UseTaggingSocket{@@/end}  
   }
 %    \end{macrocode}
 % \end{macro}
@@ -280,8 +284,12 @@
 \newcommand*\@sillynumeral { \@@_numeral:n }
 \cs_new:Npn \@@_numeral:n #1
   {
+    \UseTaggingSocket{@@/begin}{#1}
+    \SuspendTagging{@@}
     \exp_args:Ne \str_map_function:nN
       { \int_to_base:nn {#1} { 12 } } \@@_numeral_aux:n
+    \ResumeTagging{@@}
+    \UseTaggingSocket{@@/end}   
   }
 \cs_new:Npn \@@_numeral_aux:n #1
   { \@@_step_aux:eN { "\char_uppercase:N #1+1 } \c_true_bool }
@@ -289,6 +297,28 @@
 % \end{macro}
 % \end{macro}
 % \end{macro}
+% 
+% \subsection{Tagging Support}
+
+%    \begin{macrocode}
+\NewSocket{tagsupport/@@/begin}{1}
+\NewSocket{tagsupport/@@/end}{0}
+\NewSocketPlug{tagsupport/@@/begin}{tagged}
+ {
+   \mode_leave_vertical:
+   \tag_mc_end_push:
+   \tag_struct_begin:n {tag=Span}
+   \tag_mc_begin:n {actualtext=#1}   
+ }
+\NewSocketPlug{tagsupport/@@/end}{tagged}
+ {
+   \tag_mc_end:
+   \tag_struct_end:
+   \tag_mc_begin_pop:n{}  
+ }
+\AssignSocketPlug{tagsupport/@@/begin}{tagged} 
+\AssignSocketPlug{tagsupport/@@/end}{tagged}
+%    \end{macrocode}
 %
 % \subsection{Internals}
 %
